@@ -4,12 +4,11 @@
 #include "/home/cpp_debug_file.cpp"
 
 using namespace std;
-#define int long long
 #ifndef ONLINE_JUDGE
 #define debug(x...)                 \
     cerr << "(" << __LINE__ << ") " \
          << "[" << #x << "] = [";   \
-    _print(x)
+    _print(x);
 #else
 #define debug(x...)
 #endif
