@@ -1,3 +1,5 @@
+// https://codeforces.com/contest/1679/problem/C solve
+
 #include <bits/stdc++.h>
 using namespace std;
 #ifndef ONLINE_JUDGE
