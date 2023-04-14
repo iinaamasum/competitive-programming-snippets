@@ -1,8 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define debug(x...)                             \
+    cerr << __LINE__ << ". [" << #x << "] = ["; \
+    _print(x);
+#define case(tt) cerr << "\n\nCase " << tt << ": " << endl;
 
-/******** Debug Code *******/
-void __print(int x) { cerr << x; }
+/********************Debug code**********************/
+// void __print(int x) { cerr << x; }
 void __print(long x) { cerr << x; }
 void __print(long long x) { cerr << x; }
 void __print(unsigned x) { cerr << x; }
@@ -90,33 +94,4 @@ void _print(const Head &H, const Tail &...T) {
     if (sizeof...(T))
         cerr << ", ";
     _print(T...);
-}
-#ifndef ONLINE_JUDGE
-#define debug(x...)               \
-    cerr << "(" << __LINE__ << ") " << "[" << #x << "] = ["; \
-    _print(x)
-#else
-#define debug(x...)
-#endif
-
-int32_t main() {
-    int a = 3;
-    char c = 'z';
-    string s = "asdf";
-    vector<vector<pair<int, int>>> v{
-        {{1, 2}, {2, 3}, {3, 4}},
-        {{-1, 23}},
-        {},
-        {{42, 42}, {-1, -3}}};
-    map<int, int> m;
-    stack<int> s1;
-    s1.push(1);
-    s1.push(2);
-    debug(s1);
-    m[1] = 1;
-    m[2] = 2;
-    debug(a, c, s);
-    debug(v);
-    debug(a);
-    debug(m);
 }

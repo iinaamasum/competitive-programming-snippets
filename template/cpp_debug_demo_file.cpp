@@ -1,16 +1,13 @@
 #include <bits/stdc++.h>
+using namespace std;
+
+#ifndef ONLINE_JUDGE
 /********important*********/
 // include your cpp_debug_file.cpp location here
 #include "/home/cpp_debug_file.cpp"
-
-using namespace std;
-#ifndef ONLINE_JUDGE
-#define debug(x...)                 \
-    cerr << "(" << __LINE__ << ") " \
-         << "[" << #x << "] = [";   \
-    _print(x);
 #else
 #define debug(x...)
+#define case(t)
 #endif
 
 int32_t main() {
